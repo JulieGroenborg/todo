@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Indkøb</h1>
+    <div id="kant">
+      <div id="buttons">
+        <div id="two_btns">
+          <img id="add_btn" src="img/add_btn.svg" alt="" />
+          <img id="delete_btn" src="img/delete_btn.svg" alt="" />
+        </div>
+        <button value="Submit" id="clear">Slet listen</button>
+      </div>
+      <div id="create_list" class="hide">
+        <form id="form" action="">
+          <div>
+            <label for="item">Varen</label>
+            <input type="text" id="item" name="item" />
+          </div>
+          <div>
+            <label id="tal" for="quan">Antal</label>
+            <input type="text" id="quan" name="quan" />
+            <button id="submit" type="" value="Submit">Enter</button>
+          </div>
+        </form>
+      </div>
+      <h2 id="bought">Husk at købe</h2>
+
+      <div id="show_list">
+        <!-- list template will be copied and inserted here -->
+      </div>
+      <h2>Er købt</h2>
+      <div id="done_list">
+        <!-- list template will be copied and inserted here -->
+      </div>
+
+      <template id="the_written">
+        <div class="container">
+          <input id="check" type="checkbox" />
+          <span data-field="item" class="itemP" class="checkmark"></span>
+          <span data-field="quan" class="quanP"></span>
+          <img
+            class="hide movement"
+            id="delete"
+            src="img/delete_btn.svg"
+            alt=""
+          /></div
+      ></template>
+    </div>
+  </body>
+</html>
